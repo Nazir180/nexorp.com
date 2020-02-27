@@ -1,0 +1,68 @@
+<!DOCTYPE html> 
+<html> 
+ 
+<head> 
+ <meta name="viewport" content="width=device-width, initial-scale=1"> 
+ 
+ <style> 
+ 
+ .dropbtn { background-color:  #DFD2D2   ; color: black; padding: 16px; font-size: 16px; border: none; cursor: pointer; } .dropbtn:hover, .dropbtn:focus { background-color: #7effa5; } #myInput { border-box: box-sizing; background-image:url('search.png'); background-position: 14px 12px; background-repeat: no-repeat; font-size: 16px; padding: 14px 20px 12px 45px; border: none; } .dropdown { position: relative; display: inline-block; } .dropdown-content { display: none; position: absolute; background-color: #f6f6f6; min-width: 230px; overflow: auto; box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); } .dropdown-content a { color: black; padding: 12px 16px; text-decoration: none; display: block; } .dropdown a:hover {background-color: #ddd} .show {display:block;} 
+   
+
+/* Full-width input fields */ input[type=text], input[type=password] { width: 100%; padding: 12px 20px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; box-sizing: border-box; } /* Set a style for all buttons */ button { background-color: #DFD2D2; color:black;float:right; ; padding: 14px 20px; margin: 8px 0; border: none; cursor: pointer; width: 100%; } .cancelbtn { width: auto; padding: 10px 18px; background-color: #4682b4; } /* Center the image and position the close button */ .imgcontainer { text-align: center; margin: 24px 0 12px 0; position: relative; } img.avatar { width: 40%; border-radius: 50%; } .container { padding: 16px; } span.psw { float: right; padding-top: 16px; } /* The Modal (background) */ .modal { display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgb(0,0,0); background-color: rgba(0,0,0,0.4); padding-top: 60px; } .modal-content { background-color: #fefefe; margin: 5% auto 15% auto; border: 1px solid #888; width: 80%; } /* The Close Button (x) */ .close { position: absolute; right: 25px; top: 0; color: #000; font-size: 35px; font-weight: bold; } .close:hover, .close:focus { color: red; cursor: pointer; } /* Add Zoom Animation */ .animate { -webkit-animation: animatezoom 0.6s; animation: animatezoom 0.6s } @-webkit-keyframes animatezoom { from {-webkit-transform: scale(0)} to {-webkit-transform: scale(1)} } @keyframes animatezoom { from {transform: scale(0)} to {transform: scale(1)} } /* Change styles for span and cancel button on extra small screens */ @media screen and(max-width: 300px){ span.psw { display: block; float: none; } .cancelbtn { width: 100%; } }
+ 
+ #header {
+    background-color:   #969BB7  ;
+    color:black;
+    font-family:Times new roman;
+    text-align:center;
+    padding:3px;
+    
+    }
+    
+  
+</style> 
+ </head> 
+ 
+<body> 
+
+<div id="header">
+	<h1>NOVA TECH</h1>
+	</div>
+	
+	
+	<div class="dropdown"> <button onclick="myFunction()" class="dropbtn">Menu</button> <div id="myDropdown" class="dropdown-content"> <input type="text" placeholder="Search.." id="myInput"onkeyup="filterFunction()">
+	 <a href="Nova.html">HOME</a> 
+	 <a href="services.html">SERVICES</a>
+	<a href="ABOUT.html">ABOUT</a> 
+	<a href="CONTACT.html">CONTACT</a> 
+	<a href="FAQ.html">FAQ</a> </div> </div> <script> function myFunction() { document.getElementById("myDropdown") .classList.toggle("show"); } function filterFunction() { var input, filter, ul, li, a, i; input = document.getElementById ("myInput"); filter = input.value.toUpperCase(); div = document.getElementById ("myDropdown"); a = div.getElementsByTagName("a"); for (i = 0; i < a.length; i++) { if (a[i].innerHTML.toUpperCase() .indexOf(filter) > -1) { a[i].style.display   = ""; } else { a[i].style.display="none"; } } } </script>
+	
+	
+	
+	
+	<button onclick="document. getElementById('id01') .style.display='block'" style="width:auto;">Login </button> <div id="id01" class="modal"> <form class="modal-content animate" action="action_page.php"> <div class="imgcontainer"> <span onclick="document .getElementById('id01') .style.display='none'" class="close" title="Close Modal"> &times;</span> <img src="img_profile.png" alt="Avatar" class="avatar"> </div> <div class="container"> <label><b>Username</b></label> <input type="text" placeholder= "Enter Username" name="uname" required> <label><b>Password</b></label> <input type="password" placeholder= "Enter Password" name="psw" required> <button input type="number">Login</button> <input type="checkbox" checked="checked"> Remember me </div>
+	 <div class="container" style="background-color:#f1f1f1"> 
+	 <button type="button" onclick="document.getElementById ('id01').style. display='none'" class="cancelbtn"> Cancel</button> 
+	 <span class="psw">Forgot <a href="#">password? </a></span> </div> </form> </div> <script> // Get the modal var modal = document.getElementById ('id01'); // When the user clicks anywhere outside of the modal, close it window.onclick = function(event) { if (event.target == modal) { modal.style.display = "none"; } } </script>
+	
+	<hr/>
+	<h2 style="text-align:center"><b>CONNECT TO YOUR WORLD</b></h2>
+	<hr/>
+
+<div >
+	<p>
+		In today's world ,internet , internet is the most popular way of connecting with the people around you. At <a href="#">NOVA TECHNOLOGIES </a> ,you get quality web design, development and management by our team of hightech developers.<br/>
+		All this is with the aim to  <i>Connect You To Your World.</i>
+		</p>
+		</div>
+<div style="height:120px">
+	</div>
+	<div style="background-color:  #969BB7 ">
+		@copyright  2019 NOVA TECHNOLOGIES
+
+   </div>
+
+</body> 
+ 
+</html>
